@@ -1,0 +1,146 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  border: 1px solid #2f2f37;
+  align-items: center;
+  flex-direction: column; /* Makes the modal-header and modal box stack vertically */
+}
+
+/* Modal Header */
+.modal-header {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-heade{
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-header p {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* Staking Box */
+.staking-box {
+  background: linear-gradient(212.29deg, #404A4E 1.57%, #373949 80.64%);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2F2F3780;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #2f2f37;
+}
+
+.toast-notification {
+  position: fixed;
+  top: 20px;  /* Position the toast at the top */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+/* Input */
+.input-container input {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 16px;
+  flex-grow: 1;
+  outline: none;
+}
+
+/* USDC Logo */
+.usdc-logo {
+  width: 24px;
+  height: 24px;
+  
+}
+
+/* Balance and Add Funds */
+.balance-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9ca3af;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.add-funds {
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+/* Staking Details */
+.staking-details {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border: 1px solid #8e8e96;
+}
+
+.staking-details div {
+  margin-bottom: 8px;
+}
+
+.lido-apr, .staking-period {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.staking-period {
+  margin-bottom: 0;
+}
+
+/* Estimated Yield in Green */
+.estimated-yield {
+  color: #22c55e; /* Green color */
+}
+
+/* Stake Button */
+.stake-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.stake-button:hover {
+  background-color: #2563eb;
+}

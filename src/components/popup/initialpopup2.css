@@ -1,0 +1,132 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column; 
+}
+
+/* Modal Header */
+.modal-heade {
+color: white;
+font-size: 24px;
+text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.container {
+  background-color: #262931;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(11, 11, 11, 0.2);
+  color: white;
+}
+
+.inputContainer {
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #5c6c78;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #3b4955;
+}
+
+.input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.asset {
+  display: flex;
+  align-items: center;
+  color: #6da5ff;
+}
+
+.assetIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.balance {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.option {
+  border: 1px solid #5c6c78;
+  border-radius: 8px;
+  padding: 10px;
+  width: 48%;
+  margin-left: 12;
+  padding-left: 12;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  background-color: #3b4955;
+  text-align: center;
+}
+
+.optionLabel {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.optionDetails {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.withdrawButton {
+  width: 100%;
+  padding: 15px;
+  background-color: #437dd1;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.withdrawButton:disabled {
+  background-color: #5c6c78;
+  cursor: not-allowed;
+}

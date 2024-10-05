@@ -1,0 +1,192 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(28, 28, 28, 0.7); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+
+.connect-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay2 {
+    display: none; /* hidden by default */
+    position: fixed; /* fixed */
+    z-index: 100; /* z-[100] */
+    top: 0; /* inset-0 */
+    right: 0; /* inset-0 */
+    bottom: 0; /* inset-0 */
+    left: 0; /* inset-0 */
+    justify-content: center; /* justify-center */
+    align-items: center; /* items-center */
+    background-color: rgba(0, 0, 0, 0.7); /* bg-black/70 */
+  }
+  
+  .modal-overlay2.visible {
+    display: flex; /* show the modal */
+  }
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.url, .network-info, .agreement-text {
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.url {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.connection-request, .footer {
+    text-align: center;
+    
+}
+
+.request-text {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.app-name {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+
+.flow-box {
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    border: 1px solid #333;
+    margin: 4px;
+    padding: 4px;
+}
+
+.flow-boxmain {
+    background-color: #000;
+    border-radius: 12px;
+    border: 1px solid #333;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.flow-box h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+    text-align: left;
+}
+.flow-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.flow-row img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.flow-text {
+    font-size: 14px;
+    color: #bbb;
+    text-align:start
+}
+
+
+.network-info p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 1px 0;
+    justify-content: space-between;
+}
+
+.link {
+    color: #8254ff;
+    text-decoration: none;
+}
+
+/* Dropdown arrow styling */
+.dropdown-arrow {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.cancel-button, .continue-button {
+    padding: 12px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1;
+    color: #fff;
+    text-align: center;
+}
+
+.app-logo {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+  }
+
+.cancel-button {
+    background-color: #333;
+    margin-right: 10px;
+}
+
+.continue-button {
+    background-color: #8254ff;
+    margin-left: 10px;
+}
+
+
+.agreement-text {
+    font-size: 12px;
+    color: #bbb;
+    text-align: center;
+    margin-top: 20px;
+}

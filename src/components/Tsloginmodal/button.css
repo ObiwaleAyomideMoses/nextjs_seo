@@ -1,0 +1,138 @@
+/* Background overlay for modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  .modal-overlay2 {
+    display: none; /* hidden by default */
+    position: fixed; /* fixed */
+    z-index: 100; /* z-[100] */
+    top: 0; /* inset-0 */
+    right: 0; /* inset-0 */
+    bottom: 0; /* inset-0 */
+    left: 0; /* inset-0 */
+    justify-content: center; /* justify-center */
+    align-items: center; /* items-center */
+    background-color: rgba(0, 0, 0, 0.7); /* bg-black/70 */
+  }
+  
+  .modal-overlay2.visible {
+    display: flex; /* show the modal */
+  }
+  
+  /* Centered modal container */
+  .login-container {
+    max-width: 517px;
+    width: 100%;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+
+  /* Adjusted login-button styling */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+  max-width: 453px;
+  height: 58px;
+  margin: 10px auto;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Ensure both logos and title are properly centered */
+.login-button div {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust logo styling for better vertical alignment */
+.button-logo {
+  height: 24px;
+  margin-right: 10px;
+}
+
+
+  
+  /* Button hover effect */
+  .login-button:hover {
+    background-color: #a7d7fa;
+  }
+  
+  
+  .app-logo {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+  }
+  
+  .app-logo2 {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  /* Subtitle styling */
+  .wallet-title {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  /* Terms and footer styling */
+  .terms {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 4px;
+    padding: 8;
+    color: #fff;
+  }
+  
+  .terms a {
+    color: #B882FF;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+  }
+  .footer a {
+    color: #B882FF;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
