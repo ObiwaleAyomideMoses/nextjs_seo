@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTSConnect } from '../Tsloginmodal/context/ConnectContextProvider';
+import { useTSConnect } from '@/src/context/ConnectContextProvider';
 
 interface InitialWITModalProps {
   onCancel?: () => void;

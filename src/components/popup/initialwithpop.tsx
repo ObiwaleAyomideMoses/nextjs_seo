@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Withdrawal/Withdrawal.css'
-import { useTSConnect } from '../Tsloginmodal/context/ConnectContextProvider';
+import { useTSConnect } from '@/src/context/ConnectContextProvider';
 
 const InitialWithdrawPopup: React.FC = (): JSX.Element => {
   const [amount, setAmount] = useState<string>('');

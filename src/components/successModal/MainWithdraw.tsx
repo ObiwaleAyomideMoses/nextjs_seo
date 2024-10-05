@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Withdrawal/Withdrawal.css';
-import { useTSConnect } from '../Tsloginmodal/context/ConnectContextProvider';
+import { useTSConnect } from '@/src/context/ConnectContextProvider';
+
 const StETHWithdraw: React.FC = () => {
   const [amount, setAmount] = useState<string>('');
   const { stakeBal } = useTSConnect();
