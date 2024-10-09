@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Params }) {
   let clientInfo = {
     name: 'Default Title',
     description: 'Default Description',
-    image: 'default-image-url',
+    image: 'default-image-eurl',
   };
 
   try {
@@ -50,10 +50,14 @@ export async function generateMetadata({ params }: { params: Params }) {
       type: 'website',
     },
     twitter: {
-      card: 'summary_large_image',
-      title: clientInfo.name || 'Default Title',
-      description: clientInfo.description || 'Default Description',
-      images: [clientInfo.image || 'default-image-url'],
+      card: 'player',
+      site: '@AyomideObiwale',
+      title: clientInfo.name || 'Your App Title',
+      description: clientInfo.description || 'Brief description of your app',
+      player: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345l',
+      playerWidth: '360',
+      playerHeight: '560',
+      images: [clientInfo.image || 'https://your-domain.com/preview-image.png'],
     },
   };
 }
