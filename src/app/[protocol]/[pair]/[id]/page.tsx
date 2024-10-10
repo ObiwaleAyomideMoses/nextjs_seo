@@ -51,9 +51,8 @@ export async function generateMetadata({ params }: { params: Params }) {
       site: '@AyomideObiwale',
       title: clientInfo.name || 'Your App Title',
       description: clientInfo.description || 'Brief description of your app',
-      player: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345',
-      playerWidth: '360',
-      playerHeight: '560',
+      player: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345l',
+
       images: [clientInfo.image || 'https://your-domain.com/preview-image.png'],
     },
   };
