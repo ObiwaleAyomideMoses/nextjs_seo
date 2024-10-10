@@ -42,9 +42,6 @@ export async function generateMetadata({ params }: { params: Params }) {
       images: [
         {
           url: clientInfo.image || 'default-image-url',
-          width: 800,
-          height: 600,
-          alt: clientInfo.name || 'Default Alt Text',
         },
       ],
       type: 'website',
@@ -54,7 +51,7 @@ export async function generateMetadata({ params }: { params: Params }) {
       site: '@AyomideObiwale',
       title: clientInfo.name || 'Your App Title',
       description: clientInfo.description || 'Brief description of your app',
-      player: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345l',
+      player: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345',
       playerWidth: '360',
       playerHeight: '560',
       images: [clientInfo.image || 'https://your-domain.com/preview-image.png'],
