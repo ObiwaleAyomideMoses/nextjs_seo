@@ -37,6 +37,7 @@ export async function generateMetadata({ params }: { params: Params }) {
     title: clientInfo.name || 'Default Title',
     description: clientInfo.description || 'Default Description',
     openGraph: {
+      url: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345',
       title: clientInfo.name || 'Default Title',
       description: clientInfo.description || 'Default Description',
       images: [
