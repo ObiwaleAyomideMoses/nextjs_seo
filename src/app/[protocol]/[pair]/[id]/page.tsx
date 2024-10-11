@@ -37,12 +37,14 @@ export async function generateMetadata({ params }: { params: Params }) {
     title: clientInfo.name || 'Default Title',
     description: clientInfo.description || 'Default Description',
     openGraph: {
-      url: 'https://nextjs-seo-seven.vercel.app/lido/usdc/12345',
       title: clientInfo.name || 'Default Title',
       description: clientInfo.description || 'Default Description',
       images: [
         {
           url: clientInfo.image || 'default-image-url',
+          width: 800,
+          height: 600,
+          alt: clientInfo.name || 'Default Alt Text',
         },
       ],
       type: 'website',
@@ -51,7 +53,7 @@ export async function generateMetadata({ params }: { params: Params }) {
       card: 'summary_large_image',
       title: clientInfo.name || 'Default Title',
       description: clientInfo.description || 'Default Description',
-      image: clientInfo.image || 'default-image-url',
+      images: [clientInfo.image || 'default-image-url'],
     },
   };
 }
