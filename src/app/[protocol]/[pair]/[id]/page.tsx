@@ -34,14 +34,16 @@ export async function generateMetadata({ params }: { params: Params }) {
   }
 
   return {
-    title: clientInfo.name || 'Default Title',
+    title: clientInfo.description || 'Default Title',
     description: clientInfo.description || 'Default Description',
     openGraph: {
       title: clientInfo.name || 'Default Title',
       description: clientInfo.description || 'Default Description',
       images: [
         {
-          url: clientInfo.image || 'default-image-url',
+          url:
+            clientInfo.image ||
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzIinWsnPhagcn3Ctm2-R_w3dt0mwD3E5cw&s',
           width: 800,
           height: 600,
           alt: clientInfo.name || 'Default Alt Text',
@@ -51,18 +53,15 @@ export async function generateMetadata({ params }: { params: Params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Your title',
-      description: 'Your description',
-      creator: '@author_here',
-      images: [
-        {
-          url: clientInfo.image,
-          blurDataURL: 'clientInfo.image ',
-          width: 1200,
-          height: 630,
-          alt: clientInfo.description || 'Default Alt Text',
-        },
-      ],
+      title: 'lido staking',
+      description: clientInfo.description || 'Default Description',
+
+      images: {
+        url:
+          clientInfo.image ||
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzIinWsnPhagcn3Ctm2-R_w3dt0mwD3E5cw&s',
+        alt: `Preview image for ${clientInfo.description}`,
+      },
     },
   };
 }
