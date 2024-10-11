@@ -51,9 +51,18 @@ export async function generateMetadata({ params }: { params: Params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: clientInfo.name || 'Default Title',
-      description: clientInfo.description || 'Default Description',
-      images: [clientInfo.image || 'default-image-url'],
+      title: 'Your title',
+      description: 'Your description',
+      creator: '@author_here',
+      images: [
+        {
+          url: clientInfo.image,
+          blurDataURL: 'clientInfo.image ',
+          width: 1200,
+          height: 630,
+          alt: clientInfo.description || 'Default Alt Text',
+        },
+      ],
     },
   };
 }
